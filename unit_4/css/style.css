@@ -1,0 +1,74 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-size:16px;
+	font-family: Futura, /*Proxima Nova,*/ sans-serif;
+	color: #fff;
+}
+
+nav {
+	float: right;
+	padding: 1.5em;
+}
+
+nav a{
+	color: #fff;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 3px;
+	padding: .5em;
+	line-height: 2.5;
+}
+
+a:hover{
+	color: grey;
+}
+
+h1{
+	font-family: futura-pt, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 2.25em;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+}
+#slogan{
+	text-transform: uppercase;
+	font-size: 12px;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	letter-spacing: 5px;
+	line-height: 2.5;
+}
+
+#intro {
+	background: url("../images/beauty-hero.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 90vh;
+	padding: 2em;
+}
+
+.tab{
+	color: black;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: 5px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: white;
+	padding: 12px;
+	float: left;
+}
