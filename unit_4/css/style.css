@@ -13,18 +13,23 @@ body{
 	color: #fff;
 }
 
-div{
+header{
+	/*float: left;*/
 	position: fixed;
 	padding: 1.5em;
-	margin: 1em;
+	width: 100%;
 }
 
-nav {
-	position: fixed;
-	float: right;
-	padding: 1.5em;
-	margin: 1em;
-}
+
+nav{
+	/*float: right;*/
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 1.75em;
+	/*background-color: rgba(50,50,50,0.5);*/
+	margin-bottom: 5px;
+	}
 
 nav a{
 	color: #fff;
@@ -32,15 +37,21 @@ nav a{
 	font-style: normal;
 	font-weight: 400;
 	font-size: 0.75em;
-	/*text-transform: uppercase;*/
+	text-transform: uppercase;
 	text-decoration: none;
 	letter-spacing: 0.2em;
 	line-height: 2.5;
-	margin: 0.5em;
+	margin-right: 1em;
+	padding-bottom: 2px;
+	
 }
 
 a:hover{
-	color: grey;
+	/*color: grey;*/
+	margin-bottom: 5px;
+	border-bottom: 1px solid white;
+	margin-right: 1em;
+	padding-bottom: 2px;
 }
 
 h1{
@@ -74,21 +85,6 @@ h1{
 	padding: 2em;
 }
 
-/*.tab{
-	font-family: futura-pt, sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 0.9em;
-	letter-spacing: 0.4em;
-	color: grey;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-	background-color: white;
-	padding: 12px;
-	float: left;
-}
-*/
 #fashion {
 	background: url("../images/fashion-hero.jpg");
 	background-size: cover;
