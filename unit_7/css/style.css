@@ -99,7 +99,7 @@ section:after {
 	background: url("../images/beauty-hero.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100vh;
+	height: 98vh;
 	padding: 2em;
 }
 
@@ -107,7 +107,7 @@ section:after {
 	background: url("../images/fashion-hero.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100vh;
+	height: 98vh;
 	padding: 2em;
 }
 
@@ -115,14 +115,14 @@ section:after {
 	background: url("../images/kids-hero.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100vh;
+	height: 98vh;
 	padding: 2em;
 }
 #interiors {
 	background: url("../images/interiors-hero.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100vh;
+	height: 98vh;
 	padding: 2em;
 }
 
@@ -130,7 +130,7 @@ section:after {
 	background: url("../images/food-hero.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100vh;
+	height: 98vh;
 	padding: 2em;
 }
 
@@ -138,7 +138,7 @@ section:after {
 	background: url("../images/seasonal-hero.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100vh;
+	height: 98vh;
 	padding: 2em;
 }
 
