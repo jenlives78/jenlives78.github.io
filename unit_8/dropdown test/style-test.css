@@ -34,7 +34,7 @@ body{
     padding: 1.5em;
     display: inline-block;
     transform: translateY(10%);
-    float: left;
+
 }
 
 .navbar a span {
