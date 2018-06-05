@@ -15,9 +15,10 @@ body{
 }
 
 
-    .navbar {
+.navbar {
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
+    float: right;
 }
 
 .navbar a {
