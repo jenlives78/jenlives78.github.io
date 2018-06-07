@@ -30,8 +30,7 @@ header{
 	background-color: lightgreen;
 }
 
-
-#white-jen{
+h1 {
 	color: #fff;
 	font-family: futura-pt, sans-serif;
 	font-style: normal;
@@ -41,7 +40,7 @@ header{
 	letter-spacing: 0.3em;
 }
 
-#white-slogan{
+#slogan{
 	color: #fff;
 	font-family: proxima-nova, sans-serif;
 	font-style: normal;
@@ -52,8 +51,8 @@ header{
 	line-height: 1.5em;
 }
 
-#black-jen{
-	color: black;
+#blk-jen{
+	color: #000;
 	font-family: futura-pt, sans-serif;
 	font-style: normal;
 	font-weight: 600;
@@ -62,8 +61,8 @@ header{
 	letter-spacing: 0.3em;
 }
 
-#black-slogan{
-	color: black;
+#blk-slogan{
+	color: #000;
 	font-family: proxima-nova, sans-serif;
 	font-style: normal;
 	font-weight: 100;
@@ -72,7 +71,7 @@ header{
 	letter-spacing: 0.6em;
 	line-height: 1.5em;
 }
-/*start of nav styling*/
+/*start of white-nav styling*/
 .navbar {
     overflow: hidden;
     font-family: futura-pt, proxima-nova, sans-serif;
@@ -80,7 +79,7 @@ header{
 }
 
 .navbar a {
-    color: white;
+    color: #fff;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -130,7 +129,7 @@ header{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: #fff;
     min-width: 140px;
     padding: 0.7em;
     z-index: 1;
@@ -138,7 +137,7 @@ header{
 
 .dropdown-content a {
     float: none;
-    color: black;
+    color: #000;
     padding: 5px 15px;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
@@ -151,13 +150,100 @@ header{
 }
 
 .dropdown-content a:hover {
-    background-color: white;
+    background-color: #fff;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
-/*end of nav styling*/
+/*end of white-nav styling*/
+
+/*start of black-nav styling*/
+.blk-navbar {
+    overflow: hidden;
+    font-family: futura-pt, proxima-nova, sans-serif;
+    float: right;
+}
+
+.blk-navbar a {
+    color: #000;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    line-height: 2.5;
+    padding: 1.5em;
+    display: inline-block;
+    transform: translateY(10%);
+}
+
+.blk-navbar a span {
+    padding-bottom: 8px: 
+}
+
+.blk-navbar a:hover span{
+    border-bottom: 0.5px solid;   
+}
+
+.blk-dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.blk-dropdown .blk-workbtn {
+    color: #000;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    line-height: 2.5;
+    margin-right: 1em;
+    padding: 1.5em;
+    display: inline-block;
+    transform: translateY(10%);
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+
+.blk-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 140px;
+    padding: 0.7em;
+    z-index: 1;
+}
+
+.blk-dropdown-content a {
+    float: none;
+    color: #fff;
+    padding: 5px 15px;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    text-align: left;    
+}
+
+.blk-dropdown-content a:hover {
+    background-color: #000;
+}
+
+.blk-dropdown:hover .blk-dropdown-content {
+    display: block;
+}
+/*end of black-nav styling*/
 
 
 /*label {
@@ -277,7 +363,7 @@ section a:hover span{
 footer {
 	height: 3em;
 	width: 100%;
-	background-color: black;
+	background-color: #fff;
 	position: relative;
 	z-index: 10;
 }
@@ -291,7 +377,7 @@ footer a:hover span{
 }
 
 #copyright {
-	color: #fff;
+	color: grey;
 	font-family: proxima-nova, sans-serif;
 	font-style: normal;
 	font-weight: 100;
@@ -304,11 +390,12 @@ footer a:hover span{
 }
 
 #year {
-	color: grey;
+	color: #000;
+	font-weight: 400;
 }
 
 #top-link {
-	color: #fff;
+	color: #000;
 	font-family: proxima-nova, sans-serif;
 	font-style: normal;
 	font-weight: 400;
