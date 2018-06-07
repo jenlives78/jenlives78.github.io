@@ -1,0 +1,154 @@
+
+@import url("https://use.typekit.net/aun6ona.css");
+
+ *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+    font-size:16px;
+    font-family: futura-pt, proxima-nova, sans-serif;
+    color: #fff;
+}
+
+label {
+    color: white;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    line-height: 2.5;
+    padding: 1.5em;
+    display: inline-block;
+    transform: translateY(10%);
+    display: none;
+}
+
+#toggle{
+    display: none;
+}
+
+.navbar a {
+    color: white;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    line-height: 2.5;
+    padding: 1.5em;
+    display: inline-block;
+    transform: translateY(10%);
+}
+
+.navbar {
+    overflow: hidden;
+    font-family: futura-pt, proxima-nova, sans-serif;
+    float: right;
+    background-color: lightblue;
+}
+
+.navbar a {
+    color: white;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    line-height: 2.5;
+    padding: 1.5em;
+    display: inline-block;
+    transform: translateY(10%);
+}
+
+.navbar a span {
+    padding-bottom: 8px: 
+}
+
+.navbar a:hover span{
+    border-bottom: 1px solid;   
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    color: #fff;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    line-height: 2.5;
+    margin-right: 1em;
+    padding: 1.5em;
+    display: inline-block;
+    transform: translateY(10%);
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: lightgreen;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 140px;
+    padding: 0.7em;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 5px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*media query*/
+
+@media only screen and (max-width : 480px) {
+   
+   label{
+        display: block;
+    }
+
+    #toggle:checked + nav{
+        display: block;
+    }
+
+
+   .dropdown {
+    display: none;
+   }
