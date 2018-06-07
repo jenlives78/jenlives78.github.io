@@ -13,22 +13,47 @@ body{
 	color: #fff;
 }
 
-div{
-	float: left;
-	margin-left: 1em;
-	margin-top: 0.5em;
-}
-
+/*start of header stying*/
 header{
 	position: fixed;
-	padding: 1.5em;
+	/*padding: 1.5em;*/
 	width: 100%;
 	z-index: 8;
+	background-color: lightpink;
 }
 
+.logo {
+	float: left;
+	margin-left: 2em;
+	margin-top: 0.5em;
+	background-color: lightgreen;
+}
+
+h1{
+	color: #fff;
+	font-family: futura-pt, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 2.2em;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+}
+
+#slogan{
+	color: #fff;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 0.75em;
+	letter-spacing: 0.6em;
+	line-height: 1.5em;
+}
+
+/*start of nav styling*/
 .navbar {
     overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: futura-pt, proxima-nova, sans-serif;
     float: right;
 }
 
@@ -45,7 +70,6 @@ header{
     padding: 1.5em;
     display: inline-block;
     transform: translateY(10%);
-    float: left;
 }
 
 .navbar a span {
@@ -53,7 +77,7 @@ header{
 }
 
 .navbar a:hover span{
-    border-bottom: 1px solid;   
+    border-bottom: 0.5px solid;   
 }
 
 .dropdown {
@@ -61,7 +85,7 @@ header{
     overflow: hidden;
 }
 
-.dropdown .dropbtn {
+.dropdown .workbtn {
     color: #fff;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
@@ -74,14 +98,10 @@ header{
     margin-right: 1em;
     padding: 1.5em;
     display: inline-block;
-    /*transform: translateY(-0.5%);*/
+    transform: translateY(10%);
     margin: 0;
     border: none;
     outline: none;
-    background-color: inherit;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
     background-color: inherit;
 }
 
@@ -90,9 +110,7 @@ header{
     position: absolute;
     background-color: white;
     min-width: 140px;
-    margin-right: 1em;
     padding: 0.7em;
-    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
     z-index: 1;
 }
 
@@ -100,10 +118,14 @@ header{
     float: none;
     color: black;
     padding: 5px 15px;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 0.7em;
+    text-transform: uppercase;
     text-decoration: none;
     display: block;
-    text-align: left;
-    text-transform: capitalize;
+    text-align: left;    
 }
 
 .dropdown-content a:hover {
@@ -113,25 +135,36 @@ header{
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/*end of nav styling*/
 
-h1{
+
+/*label {
 	color: #fff;
-	font-family: futura-pt, sans-serif;
+	font-family: proxima-nova, sans-serif;
 	font-style: normal;
-	font-weight: 600;
-	font-size: 2.2em;
+	font-weight: 400;
+	font-size: 0.75em;
 	text-transform: uppercase;
-	letter-spacing: 0.3em;
-}
+	text-decoration: none;
+	letter-spacing: 0.2em;
+	line-height: 2.5;
+	padding: 1em;
+	display: inline-block;
+	transform: translateY(20%);
+	position: absolute;
+	right: 2em;
+	display: none;
+	}*/
 
+/*end of header styling*/
+
+/*start of section styling*/
 section{
 	position: relative;
 	z-index: 0;
 	height: 97vh;
 	padding: 2em;
 }
-
-
 
 .work {
 	font-family: proxima-nova, sans-serif;
@@ -161,15 +194,12 @@ section{
 	padding-bottom: 8px:
 }
 
-#slogan{
-	color: #fff;
-	font-family: proxima-nova, sans-serif;
-	font-style: normal;
-	font-weight: 100;
-	text-transform: uppercase;
-	font-size: 0.75em;
-	letter-spacing: 0.6em;
-	line-height: 1.5em;
+section a span {
+	padding-bottom: 8px: 
+}
+
+section a:hover span{
+	border-bottom: 0.5px solid;	
 }
 
 #beauty {
@@ -219,7 +249,9 @@ section{
 	background-repeat: no-repeat;
 	z-index: 2;
 }
+/*end of section styling*/
 
+/*start of footer styling*/
 footer {
 	height: 3em;
 	width: 100%;
@@ -227,7 +259,6 @@ footer {
 	position: relative;
 	z-index: 10;
 }
-
 
 footer a span {
 	padding-bottom: 8px: 
@@ -247,14 +278,12 @@ footer a:hover span{
 	letter-spacing: 0.1em;
 	display: inline-block;
 	margin-left: 2em;
-	transform: translateY(100%);
-	
+	transform: translateY(100%);	
 }
 
 #year {
 	color: grey;
 }
-
 
 #top-link {
 	color: #fff;
@@ -272,17 +301,11 @@ footer a:hover span{
 	top: 50%;
 	transform: translateY(-50%);
 	right: 2em;
-
-
 }
+/*end of footer styling*/
 
-section a:hover span {
-	border-bottom: 1px solid;
-}
-
-
+/*start of homepage media queries*/
 @media only screen and (max-width: 860px){
-
 	#beauty {
 	background: url("../images/beauty-2.jpg");
 	background-size: cover;
@@ -330,11 +353,17 @@ section a:hover span {
 	background-repeat: no-repeat;
 	z-index: 2;
 	}
+}
 
-@media only screen and (max-width: 680px){
+@media only screen and (max-width: 770px){
 
 	nav{
 	display: none;
+	}
+
+	label{
+	display: block;
+	z-index: 10;
 	}
 
 	h1{
@@ -342,9 +371,29 @@ section a:hover span {
 	}
 
 	div{
-	float: left;
-	margin-left: .25em;
-	margin-top: .15em;
+	margin-left: 0.25em;
+	margin-top: 0.15em;
+	}
+
+	#slogan{
+		font-size: 0.65em;
+	}
+
+	/*#toggle:checked + nav{
+		display: block;
+	}*/
+}
+
+
+@media only screen and (max-width: 680px){
+
+	h1{
+	font-size: 2em;
+	}
+
+	div{
+	margin-left: 0.25em;
+	margin-top: 0.15em;
 	}
 
 	#slogan{
@@ -356,8 +405,8 @@ section a:hover span {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	z-index: 7;
-}
+    z-index: 7;
+	}
 
 	#fashion {
 	background: url("../images/fashion-3.jpg");
@@ -365,7 +414,7 @@ section a:hover span {
 	background-position: center;
 	background-repeat: no-repeat;
 	z-index: 6;
-}
+	}
 
 	#kids {
 	background: url("../images/kids-3.jpg");
@@ -373,7 +422,7 @@ section a:hover span {
 	background-position: center;
 	background-repeat: no-repeat;
 	z-index: 5;
-}
+	}
 
 	#interiors {
 	background: url("../images/interiors-3.jpg");
@@ -381,7 +430,7 @@ section a:hover span {
 	background-position: center;
 	background-repeat: no-repeat;
 	z-index: 4;
-}
+	}
 
 	#food {
 	background: url("../images/food-3.jpg");
@@ -389,7 +438,7 @@ section a:hover span {
 	background-position: center;
 	background-repeat: no-repeat;
 	z-index: 3;
-}
+	}
 
 	#seasonal {
 	background: url("../images/seasonal-3.jpg");
@@ -397,24 +446,78 @@ section a:hover span {
 	background-position: center;
 	background-repeat: no-repeat;
 	z-index: 2;
+	}
 }
 
-@media only screen and (max-width: 450px){
-
+@media only screen and (max-width: 480px){
 	nav{
 	display: none;
+	}
+
+	header{
+	position: absolute;
+	padding: 0.5em;
+	z-index: 8;
+	}
+
+	div{
+	margin-left: 0.5em;
+	margin-top: 0.5em;
 	}
 
 	h1{
 	font-size: 1.5em;
 	}
 
-	div{
-	float: left;
-	margin-left: .25em;
-	margin-top: .15em;
+	#slogan{
+		font-size: 0.45em;
 	}
 
-	#slogan{
-		font-size: 0.5em;
+	#beauty {
+	background: url("../images/beauty-3.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+    z-index: 7;
 	}
+
+	#fashion {
+	background: url("../images/fashion-3.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 6;
+	}
+
+	#kids {
+	background: url("../images/kids-3.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 5;
+	}
+
+	#interiors {
+	background: url("../images/interiors-3.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 4;
+	}
+
+	#food {
+	background: url("../images/food-3.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 3;
+	}
+
+	#seasonal {
+	background: url("../images/seasonal-3.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 2;
+	}
+}
