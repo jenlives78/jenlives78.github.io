@@ -515,6 +515,7 @@ footer a:hover span{
 @media only screen and (max-width: 400px) {
 .logo {
 	float: none;
+	margin: 1em;
 	}
 	h1 {
 	color: #222;
