@@ -19,14 +19,14 @@ body{
 header{
 	position: relative;
 	width: 100%;
-	z-index: 8;
-/*	background-color: lightpink;*/
+	z-index: 7;
+	background-color: red;
 }
 
 .logo {
 	float: left;
-	margin-left: 2em;
-	margin-top: 2em;
+	margin-left: 3em;
+	margin-top: 2.5em;
 	/*background-color: lightgreen;*/
 }
 
@@ -34,10 +34,10 @@ h1 {
 	color: #fff;
 	font-family: futura-pt, sans-serif;
 	font-style: normal;
-	font-weight: 600;
-	font-size: 2.2em;
+	font-weight: 700;
+	font-size: 2.375em;
 	text-transform: uppercase;
-	letter-spacing: 0.3em;
+	letter-spacing: 0.25em;
 }
 
 #slogan{
@@ -47,22 +47,17 @@ h1 {
 	font-weight: 100;
 	text-transform: uppercase;
 	font-size: 0.75em;
-	letter-spacing: 0.6em;
+	letter-spacing: 0.65em;
 	line-height: 1.5em;
 }
 
 /*start of black logo styling*/
-.mini-logo {
-	margin: 2em;
-	background-color: lightgreen;
-	display: none;
-}
 
 #blk-jen{
 	color: #000;
 	font-family: futura-pt, sans-serif;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 2.2em;
 	text-transform: uppercase;
 	letter-spacing: 0.3em;
@@ -80,34 +75,6 @@ h1 {
 	line-height: 1.5em;
 	display: none;
 }
-
-#mini-jen{
-	color: #000;
-	font-family: futura-pt, sans-serif;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 1.8em;
-	text-transform: uppercase;
-	letter-spacing: 0.3em;
-	text-align: center;
-	background-color: lightgreen;
-	display: none;
-}
-
-#mini-slogan{
-	color: #000;
-	font-family: proxima-nova, sans-serif;
-	font-style: normal;
-	font-weight: 100;
-	text-transform: uppercase;
-	font-size: 0.6em;
-	letter-spacing: 0.6em;
-	line-height: 1.5em;
-	text-align: center;
-	background-color: lightgreen;
-	display: none;
-}
-
 /*end of black logo styling*/
 
 /*start of nav bar styling*/
@@ -175,7 +142,7 @@ h1 {
     background-color: #000;
     min-width: 140px;
     padding: 0.7em;
-    z-index: 1;
+/*    z-index: 1;*/
 }
 
 .dropdown-content a {
@@ -342,7 +309,7 @@ section a:hover span{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	z-index: 7;
+	z-index: 6;
 }
 
 #fashion {
@@ -350,7 +317,7 @@ section a:hover span{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	z-index: 6;
+	z-index: 5;
 }
 
 #kids {
@@ -358,7 +325,7 @@ section a:hover span{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	z-index: 5;
+	z-index: 4;
 }
 
 #interiors {
@@ -366,7 +333,7 @@ section a:hover span{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	z-index: 4;
+	z-index: 3;
 }
 
 #food {
@@ -374,7 +341,7 @@ section a:hover span{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	z-index: 3;
+	z-index: 2;
 }
 
 #seasonal {
@@ -382,7 +349,7 @@ section a:hover span{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	z-index: 2;
+	z-index: 1;
 }
 /*end of section styling*/
 
@@ -442,117 +409,158 @@ footer a:hover span{
 /*end of footer styling*/
 
 /*start of media queries*/
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 850px) {
+	.navbar {
+    display: none;	
+	}
+	.logo{
+		margin-left: 2.5em;
+		margin-top: 2em;
+	}
+	h1 {
+	font-size: 2.137em;
+	letter-spacing: 0.25em;
+	}
+	#slogan{
+	color: #fff;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 0.675em;
+	letter-spacing: 0.65em;
+	line-height: 1.5em;
+	}
 	#beauty {
 	background: url("../images/beauty-2.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	z-index: 7;
+	z-index: 6;
 	}
 	#fashion {
 	background: url("../images/fashion-2.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	z-index: 6;
+	z-index: 5;
 	}
 	#kids {
 	background: url("../images/kids-2.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	z-index: 5;
+	z-index: 4;
 	}
 	#interiors {
 	background: url("../images/interiors-2.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	z-index: 4;
+	z-index: 3;
 	}
 	#food {
 	background: url("../images/food-2.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	z-index: 3;
+	z-index: 2;
 	}
 	#seasonal {
 	background: url("../images/seasonal-2.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	z-index: 2;
+	z-index: 1;
 	}
 }
-
-@media only screen and (max-width: 850px) {
-	.navbar {
-    display: none;	
-	}
-	h1 {
-	font-size: 1.8em;
-	}
-	#slogan{
-	font-size: 0.6em;
-	line-height: 1.5em;
-	}
-}
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
 	#beauty {
 	background: url("../images/beauty-3.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	z-index: 7;
+	z-index: 6;
 	}
 	#fashion {
 	background: url("../images/fashion-3.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	z-index: 6;
+	z-index: 5;
 	}
 	#kids {
 	background: url("../images/kids-3.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	z-index: 5;
+	z-index: 4;
 	}
 	#interiors {
 	background: url("../images/interiors-3.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	z-index: 4;
+	z-index: 3;
 	}
 	#food {
 	background: url("../images/food-3.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	z-index: 3;
+	z-index: 2;
 	}
 	#seasonal {
 	background: url("../images/seasonal-3.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	z-index: 2;
-	}
-	.logo{
-		display: none;
-	}
-	.minilogo{
-		display: block;
-	}
-	#mini-jen{
-		display: block;
-	}
-	#mini-slogan{
-		display: block;
+	z-index: 1;
 	}
 }
+@media only screen and (max-width: 320px) {
+	#beauty {
+	background: url("../images/beauty-3.jpg");
+	/*background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;*/
+	z-index: 6;
+	}
+	#fashion {
+	background: url("../images/fashion-3.jpg");
+	/*background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;*/
+	z-index: 5;
+	}
+	#kids {
+	background: url("../images/kids-3.jpg");
+	/*background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;*/
+	z-index: 4;
+	}
+	#interiors {
+	background: url("../images/interiors-3.jpg");
+	/*background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;*/
+	z-index: 3;
+	}
+	#food {
+	background: url("../images/food-3.jpg");
+	/*background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;*/
+	z-index: 2;
+	}
+	#seasonal {
+	background: url("../images/seasonal-3.jpg");
+	/*background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;*/
+	z-index: 1;
+	}
+}
+}
+
