@@ -11,7 +11,6 @@ body{
 	font-size:16px;
 	font-family: futura-pt, proxima-nova, sans-serif;
 	color: #fff;
-/*	background-color: lightgrey;*/
 }
 
 
@@ -20,14 +19,25 @@ header{
 	position: relative;
 	width: 100%;
 	z-index: 7;
-	/*background-color: red;*/
 }
 
 .logo {
 	float: left;
 	margin-left: 3em;
 	margin-top: 2.5em;
-/*	background-color: lightgreen;*/
+}
+
+.black-logo {
+	float: left;
+	margin-left: 3em;
+	margin-top: 2.5em;
+}
+
+.black-logo > h1 {
+	color: #222;
+}
+.black-logo > p{
+	color: #222;
 }
 
 h1 {
@@ -40,7 +50,7 @@ h1 {
 	letter-spacing: 0.25em;
 }
 
-#slogan{
+p {
 	color: #fff;
 	font-family: proxima-nova, sans-serif;
 	font-style: normal;
@@ -51,34 +61,7 @@ h1 {
 	line-height: 1.5em;
 }
 
-/*start of black logo styling*/
-
-#blk-jen{
-	color: #000;
-	font-family: futura-pt, sans-serif;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 2.2em;
-	text-transform: uppercase;
-	letter-spacing: 0.3em;
-	display: none;
-}
-
-#blk-slogan{
-	color: #000;
-	font-family: proxima-nova, sans-serif;
-	font-style: normal;
-	font-weight: 100;
-	text-transform: uppercase;
-	font-size: 0.75em;
-	letter-spacing: 0.6em;
-	line-height: 1.5em;
-	display: none;
-}
-/*end of black logo styling*/
-
 /*start of nav bar styling*/
-/*start of white-nav styling*/
 .navbar {
     overflow: hidden;
     font-family: futura-pt, proxima-nova, sans-serif;
@@ -139,7 +122,7 @@ h1 {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #000;
+    background-color: rgba(21,19,24,.8);
     min-width: 140px;
     padding: 0.7em;
 /*    z-index: 1;*/
@@ -160,104 +143,13 @@ h1 {
 }
 
 .dropdown-content a:hover {
-    background-color: #000;
+    background-color: #222;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 /*end of white-nav styling*/
-
-/*start of black-nav styling*/
-.blk-navbar {
-    overflow: hidden;
-    font-family: futura-pt, proxima-nova, sans-serif;
-    float: right;
-    margin-top: 1.5em;
-    margin-right: 1.5em;
- /*   background-color: violet;*/
-}
-
-.blk-navbar a {
-    color: #000;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.75em;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.2em;
-    line-height: 2.5;
-    padding: 1.5em;
-    display: inline-block;
-    transform: translateY(10%);
-}
-
-.blk-navbar a span {
-    padding-bottom: 8px: 
-}
-
-.blk-navbar a:hover span{
-    border-bottom: 0.5px solid;   
-}
-
-.blk-dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.blk-dropdown .blk-workbtn {
-    color: #000;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.75em;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.2em;
-    line-height: 2.5;
-    margin-right: 1em;
-    padding: 1.5em;
-    display: inline-block;
-    transform: translateY(10%);
-    margin: 0;
-    border: none;
-    outline: none;
-    background-color: inherit;
-}
-
-.blk-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    min-width: 140px;
-    padding: 0.7em;
-    z-index: 1;
-}
-
-.blk-dropdown-content a {
-    float: none;
-    color: #000;
-    padding: 5px 15px;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 0.7em;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: block;
-    text-align: left;    
-}
-
-.blk-dropdown-content a:hover {
-    background-color: #fff;
-}
-
-.blk-dropdown:hover .blk-dropdown-content {
-    display: block;
-}
-/*end of black-nav styling*/
-/*end of header styling*/
 
 
 /*start of section styling*/
@@ -278,7 +170,7 @@ section{
 	text-align: center;
 	letter-spacing: 0.2em;
 	color: grey;
-	background-color: black;
+	background-color: rgb(21,19,24);
 	display: block;
 	position: absolute;
 	bottom: 0px;
@@ -291,7 +183,7 @@ section{
 }
 
 .section-link {
-	color: white;
+	color: #fff;
 	font-weight: 400;
 	padding-bottom: 8px:
 }
@@ -353,6 +245,16 @@ section a:hover span{
 }
 /*end of section styling*/
 
+/*start of beauty gallery styling*/
+
+.beauty-wrap {
+	background-color: violet;
+	margin-top: 300px;
+	margin-left: 2em;
+	width:90%;
+	height: 500px;
+	float: left;
+}
 
 /*start of footer styling*/
 footer {
@@ -380,17 +282,17 @@ footer a:hover span{
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	display: inline-block;
-	margin-left: 2em;
+	margin-left: 3em;
 	transform: translateY(100%);	
 }
 
 #year {
-	color: #000;
+	color: #222;
 	font-weight: 400;
 }
 
 #top-link {
-	color: #000;
+	color: #222;
 	font-family: proxima-nova, sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -521,7 +423,7 @@ footer a:hover span{
 	color: #222;
 	text-align: center;
 	}
-	#slogan{
+	p {
 	color: #222;
 	text-align: center;
 	}
@@ -569,7 +471,6 @@ footer a:hover span{
 	background-repeat: no-repeat;*/
 	z-index: 1;
 	}
+}
 
-}
-}
 
