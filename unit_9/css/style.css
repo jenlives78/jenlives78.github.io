@@ -10,27 +10,38 @@
 body{
 	font-size:16px;
 	font-family: futura-pt, proxima-nova, sans-serif;
-	color: #fff;
+	color: lightgrey;
 }
 
+.clearfix:after{
+	visibility: hidden;
+	height: 0;
+	font-size: 0;
+	content: " ";
+	display: block;
+	clear: both;
+}
 
 /*start of header stying*/
 header{
 	position: relative;
 	width: 100%;
 	z-index: 7;
+	background-color: violet;
 }
 
 .logo {
 	float: left;
 	margin-left: 3em;
 	margin-top: 2.5em;
+	background-color: peachpuff;
 }
 
 .black-logo {
 	float: left;
 	margin-left: 3em;
 	margin-top: 2.5em;
+	padding-bottom: 2.5em;
 }
 
 .black-logo > h1 {
@@ -45,9 +56,9 @@ h1 {
 	font-family: futura-pt, sans-serif;
 	font-style: normal;
 	font-weight: 700;
-	font-size: 2.375em;
+	font-size: 2.3em;
 	text-transform: uppercase;
-	letter-spacing: 0.25em;
+	letter-spacing: 0.2em;
 }
 
 p {
@@ -68,7 +79,7 @@ p {
     float: right;
     margin-top: 1.5em;
     margin-right: 1.5em;
-/*    background-color: violet;*/
+    background-color: lightgreen;
 }
 
 .navbar a {
@@ -87,7 +98,7 @@ p {
 }
 
 .navbar a span {
-    padding-bottom: 8px: 
+    padding-bottom: 8px:
 }
 
 .navbar a:hover span{
@@ -143,7 +154,7 @@ p {
 }
 
 .dropdown-content a:hover {
-    background-color: #222;
+    background-color: rgba(21,19,24,.8);
 }
 
 .dropdown:hover .dropdown-content {
@@ -186,6 +197,8 @@ section{
 	color: #fff;
 	font-weight: 400;
 	padding-bottom: 8px:
+	/*opacity: 0;
+	transition: opacity ease-in-out .5s;*/
 }
 
 section a span {
@@ -194,6 +207,7 @@ section a span {
 
 section a:hover span{
 	border-bottom: 0.5px solid;	
+	/*opacity: 1;*/
 }
 
 #beauty {
@@ -246,15 +260,72 @@ section a:hover span{
 /*end of section styling*/
 
 /*start of beauty gallery styling*/
-
-.beauty-wrap {
-	background-color: violet;
-	margin-top: 300px;
-	margin-left: 2em;
-	width:90%;
-	height: 500px;
-	float: left;
+.wrapper{
+/*	background-color: purple;*/
+	width: 100%;
+   	margin: auto;
+    overflow: hidden;
 }
+
+.beauty-tile{
+	width:16%;
+	margin: 0.15%;
+	float:left;
+	/*background-color: orange;*/
+}
+.beauty-tile img{
+	max-width: 460px;
+	display: block;
+	margin:auto;
+}
+
+.box {
+   float: left;
+   position: relative;
+   width: 16.66%;
+   padding-bottom: 16.66%;
+}
+.boxInner {
+   position: absolute;
+   left: 3px;
+   right: 3px;
+   top: 3px;
+   bottom: 3px;
+   overflow: hidden;
+}
+.boxInner img {
+   width: 100%;
+}
+.boxInner .titleBox {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin-bottom: -80px;
+   background: #222;
+   background: rgba(0, 0, 0, 0.8);
+   color: grey;
+   padding: 15px;
+   text-align: center;
+   /*my type stying*/
+   font-family: proxima-nova, sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 0.8em;
+   text-transform: uppercase;
+   text-decoration: none;
+   letter-spacing: 0.2em;
+   -webkit-transition: all 0.3s ease-out;
+   -moz-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
+}
+.story {
+   color: #fff;
+}
+
+body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+   margin-bottom: 0;}
 
 /*start of footer styling*/
 footer {
@@ -263,6 +334,7 @@ footer {
 	background-color: #fff;
 	position: relative;
 	z-index: 10;
+	background-color: peachpuff;
 }
 
 footer a span {
@@ -307,25 +379,37 @@ footer a:hover span{
 	top: 50%;
 	transform: translateY(-50%);
 	right: 2em;
+	background-color: aquamarine;
 }
 /*end of footer styling*/
 
 /*start of media queries*/
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+   /* Medium desktop: 4 tiles */
+   .box {
+      width: 25%;
+      padding-bottom: 25%;
+   }
+}
+
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   /* Small desktop / ipad view: 3 tiles */
+   .box {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+   }
+ }
+
+@media only screen and (max-width: 950px) {
 	.navbar {
-    display: none;	
+		display: none;
 	}
-	.logo{
-		margin-left: 2.5em;
-		margin-top: 2em;
-	}
-	h1 {
-	font-size: 2.137em;
-	letter-spacing: 0.25em;
-	}
-	#slogan{
-	font-size: 0.675em;
-	letter-spacing: 0.65em;
+}
+
+@media only screen and (max-width: 850px) {
+
+	body{
+		font-size: 15px;
 	}
 	#beauty {
 	background: url("../images/beauty-2.jpg");
@@ -370,6 +454,15 @@ footer a:hover span{
 	z-index: 1;
 	}
 }
+
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   .box {
+      width: 50%;
+      padding-bottom: 50%;
+   }
+}
+
 @media only screen and (max-width: 600px) {
 	#beauty {
 	background: url("../images/beauty-3.jpg");
@@ -414,11 +507,37 @@ footer a:hover span{
 	z-index: 1;
 	}
 }
+
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   .box {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+   .nav {
+      display: none;
+   }
+    .logo {
+	float: none;
+	text-align: center;
+	}
+   .black-logo {
+	float: none;
+	text-align: center;
+	}
+}
+
+
 @media only screen and (max-width: 400px) {
 .logo {
 	float: none;
-	margin: 1em;
+	/*margin: 1em;*/
+	padding-bottom: 3em;
 	}
+.black-logo {
+	float: none;
+	padding-bottom: 3em;
+}
 	h1 {
 	color: #222;
 	text-align: center;
