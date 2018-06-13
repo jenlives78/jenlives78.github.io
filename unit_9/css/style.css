@@ -10,7 +10,6 @@
 body{
 	font-size:16px;
 	font-family: futura-pt, proxima-nova, sans-serif;
-	color: lightgrey;
 }
 
 .clearfix:after{
@@ -27,29 +26,30 @@ header{
 	position: relative;
 	width: 100%;
 	z-index: 7;
-	background-color: violet;
+/*	background-color: violet;*/
 }
 
-.logo {
+.logo, .black-logo {
 	float: left;
 	margin-left: 3em;
-	margin-top: 2.5em;
+	margin-top: 2em;
 }
 
 .black-logo {
-	float: left;
-	margin-left: 3em;
-	margin-top: 2.5em;
+	margin-bottom: 2em;
 }
 
 .black-logo > h1 {
+	color: #222;
+}
+.black-logo > a {
 	color: #222;
 }
 .black-logo > p{
 	color: #222;
 }
 
-h1 {
+h1  {
 	color: #fff;
 	font-family: futura-pt, sans-serif;
 	font-style: normal;
@@ -57,6 +57,11 @@ h1 {
 	font-size: 2.3em;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
+}
+
+h1 > a{
+	text-decoration: none;
+	color: #fff;
 }
 
 p {
@@ -70,35 +75,51 @@ p {
 	line-height: 1.5em;
 }
 
-/*start of nav bar styling*/
-.navbar {
+/*start of nav styling*/
+nav {
+	margin-top: 2em;
+	margin-right: 1.5em;
     overflow: hidden;
-    font-family: proxima-nova, sans-serif;
     float: right;
-    margin-top: 1.5em;
-    margin-right: 1.5em;
+}
+#toggle{
+    display: none;
+}
+#toggle:checked + nav {
+    display: block;
 }
 
-.navbar a {
-	color: #fff;
+label {
+	color: white;
+    font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 0.75em;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.2em;
-    line-height: 2.5;
+    padding: 1.5em;
+    display: none;
+}
+nav a {
+    color: white;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2em;
     padding: 1.5em;
     display: inline-block;
-    transform: translateY(10%);
 }
 
-.navbar a span {
-    padding-bottom: 8px:
+nav a span {
+    padding-bottom: 8px: 
 }
 
-.navbar a:hover span{
-    border-bottom: 0.5px solid;   
+nav a:hover span{
+    border-bottom: 1px solid;   
 }
 
 .dropdown {
@@ -106,54 +127,58 @@ p {
     overflow: hidden;
 }
 
-.dropdown .workbtn {
+.dropdown .dropbtn {
     color: #fff;
+    font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 0.75em;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.2em;
-    line-height: 2.5;
     margin-right: 1em;
     padding: 1.5em;
     display: inline-block;
-    transform: translateY(10%);
     margin: 0;
     border: none;
     outline: none;
     background-color: inherit;
 }
 
-.dropdown-content {
+.fullmenu, .workmenu {
     display: none;
     position: absolute;
-    background-color: rgba(21,19,24,.8);
+    background-color: rgba(21,19,24,.9);
     min-width: 140px;
     padding: 0.7em;
+    z-index: 1;
 }
 
-.dropdown-content a {
+.fullmenu, .workmenu a {
     float: none;
-    padding: 5px 15px;
-    font-style: normal;
+    color: #fff;
+    font-family: proxima-nova, sans-serif;
     font-weight: 100;
-    font-size: 0.7em;
-    text-transform: uppercase;
+    font-size: 0.65em;
+    padding: 5px 15px;
     text-decoration: none;
     display: block;
-    text-align: left;    
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 2.5;
 }
 
-.dropdown-content a:hover {
-    background-color: rgba(21,19,24,.8);
-}
-
-.dropdown:hover .dropdown-content {
+.dropdown:hover .workmenu {
     display: block;
 }
-/*end of white-nav styling*/
+/*start of black nav styling*/
+.black-nav > a{
+	color: #222;
+}
 
+.black-nav > .dropdown .dropbtn{
+	color: #222;
+}
 
 /*start of section styling*/
 section{
@@ -167,7 +192,7 @@ section{
 	font-family: proxima-nova, sans-serif;
 	font-style: normal;
 	font-weight: 100;
-	font-size: 0.8em;
+	font-size: 0.75em;
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
@@ -189,8 +214,6 @@ section{
 	color: #fff;
 	font-weight: 400;
 	padding-bottom: 8px:
-	/*opacity: 0;
-	transition: opacity ease-in-out .5s;*/
 }
 
 section a span {
@@ -199,7 +222,6 @@ section a span {
 
 section a:hover span{
 	border-bottom: 0.5px solid;	
-	/*opacity: 1;*/
 }
 
 #beauty {
@@ -253,9 +275,8 @@ section a:hover span{
 
 /*start of beauty gallery styling*/
 .wrapper{
-/*	background-color: purple;*/
-	width: 100%;
-   	margin: auto;
+   	margin-left: 2em;
+   	margin-right: 2em;
     overflow: hidden;
 }
 
@@ -263,7 +284,6 @@ section a:hover span{
 	width:16%;
 	margin: 0.15%;
 	float:left;
-	/*background-color: orange;*/
 }
 .beauty-tile img{
 	max-width: 460px;
@@ -326,7 +346,6 @@ footer {
 	background-color: #fff;
 	position: relative;
 	z-index: 10;
-	background-color: peachpuff;
 }
 
 footer a span {
@@ -371,7 +390,6 @@ footer a:hover span{
 	top: 50%;
 	transform: translateY(-50%);
 	right: 2em;
-	background-color: aquamarine;
 }
 /*end of footer styling*/
 
@@ -392,17 +410,23 @@ footer a:hover span{
    }
  }
 
-@media only screen and (max-width: 950px) {
-	.navbar {
+@media only screen and (max-width: 900px) {
+	.dropdown {
 		display: none;
 	}
-}
+	.other-links{
+		display: none;
+	}
+	label{
+		display: block;
+	}
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 700px) {
 
 	body{
 		font-size: 15px;
 	}
+
 	#beauty {
 	background: url("../images/beauty-2.jpg");
 	background-size: cover;
@@ -513,15 +537,21 @@ footer a:hover span{
 
 
 @media only screen and (max-width: 400px) {
-.logo {
+
+
+ .logo {
 	float: none;
-	/*margin: 1em;*/
+	margin-left: 0;
 	padding-bottom: 3em;
 	}
 	h1 {
 	color: #222;
 	text-align: center;
 	}
+	h1 > a{
+	color: #222;
+	text-align: center;
+	}	
 	p {
 	color: #222;
 	text-align: center;
