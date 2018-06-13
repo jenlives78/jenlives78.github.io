@@ -334,7 +334,11 @@ section a:hover span{
 }
 
 body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
-   margin-bottom: 0;}
+	margin-bottom: 0;
+}
+.beautystory:hover {
+	opacity: 0.5;
+}
 
 /*start of footer styling*/
 footer {
