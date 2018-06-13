@@ -533,6 +533,9 @@ footer a:hover span{
    .nav {
       display: none;
    }
+   .wrapper {
+   	margin: 0;
+   }
 }
 
 
