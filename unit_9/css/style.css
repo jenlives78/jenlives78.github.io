@@ -73,21 +73,20 @@ p {
 }
 
 /*start of nav styling*/
-nav {
-	margin-top: 2em;
-	margin-right: 1.5em;
-    overflow: hidden;
-    float: right;
-}
 #toggle{
     display: none;
 }
-#toggle:checked + nav {
-    display: block;
+.mobile{
+	display: none;
 }
-
+nav {
+	margin-top: 2em;
+	margin-right: 2em;
+    overflow: hidden;
+    float: right;
+}
 label {
-	color: red;
+	color: #fff;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -98,10 +97,7 @@ label {
     padding: 1.5em;
     display: inline-block;
     cursor: pointer;
-    background-color: lightgreen;
-}
-.mobile{
-	display: none;
+/*    background-color: lightgreen;*/
 }
 nav a {
     color: #fff;
@@ -114,43 +110,24 @@ nav a {
     letter-spacing: 0.2em;
     padding: 1.5em;
     display: inline-block;
-    background-color: peachpuff;
 }
-
 nav a span {
     padding-bottom: 8px: 
 }
-
 nav a:hover span{
     border-bottom: 1px solid;   
 }
-
-.dropdown {
-/*    float: left;*/
-    overflow: hidden;
+label:hover ~ .navlinks > .workmenu, #toggle:checked + .navlinks, #toggle:checked + .navlinks .workmenu {
+    display: block;
+}
+.other-links{
+/*	background-color: lightgreen;*/
+}
+.navlinks{
+	overflow: hidden;
     display: inline;
 }
-
-.dropdown .dropbtn {
-    color: #fff;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.75em;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.2em;
-    margin-right: 1em;
-    padding: 1.5em;
-    display: inline-block;
-    margin: 0;
-    border: none;
-    outline: none;
-    background-color: inherit;
-    cursor: pointer;
-}
-
-.fullmenu, .workmenu {
+.workmenu {
     display: none;
     position: absolute;
     background-color: rgba(21,19,24,.9);
@@ -158,8 +135,7 @@ nav a:hover span{
     padding: 0.7em;
     z-index: 1;
 }
-
-.fullmenu, .workmenu a {
+.workmenu a {
     float: none;
     color: #fff;
     font-family: proxima-nova, sans-serif;
@@ -171,10 +147,6 @@ nav a:hover span{
     text-align: left;
     text-transform: uppercase;
     line-height: 2.5;
-}
-
-label:hover ~ .dropdown > .workmenu, #toggle:checked + .dropdown, #toggle:checked + .dropdown .workmenu {
-    display: block;
 }
 
 /*start of black nav styling*/
@@ -314,7 +286,7 @@ section a:hover span{
    right: 0;
    margin-bottom: -80px;
    background: #222;
-   background: rgba(0, 0, 0, 0.8);
+   background-color: rgba(21,19,24,.9);
    color: #bfbfbf;
    padding: 15px;
    text-align: center;
@@ -413,24 +385,36 @@ footer a:hover span{
       padding-bottom: 33.3%;
    }
  }
+@media only screen and (max-width: 1000px) {
 
-@media only screen and (max-width: 900px) {
-	.dropdown {
-		display: none;
-	}
-	.other-links{
-		display: none;
-	}
-	label{
-		display: block;
+body{
+		font-size: 15px;
 	}
 }
 
-@media only screen and (max-width: 800px) {
-
-	body{
-		font-size: 15px;
+@media only screen and (max-width: 900px) {
+	label{
+		display: block;
 	}
+	.mobile{
+	display: block;
+	}
+	.workmenu {
+    display: block;
+    position: static;
+	}
+	.wide{
+	display: none;
+	}
+	.other-links{
+	display: block;
+	background-color: rgba(21,19,24,.9);
+	}
+}
+
+@media only screen and (max-width: 650px) {
+/*	centering of logo & nav*/
+
 	 .logo {
 	float: none;
 	margin-left: 0;
