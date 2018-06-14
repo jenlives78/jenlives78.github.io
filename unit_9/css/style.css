@@ -26,7 +26,7 @@ header{
 	position: relative;
 	width: 100%;
 	z-index: 7;
-/*	background-color: violet;*/
+	background-color: violet;
 }
 
 .logo, .black-logo {
@@ -87,7 +87,7 @@ nav {
 }
 
 label {
-	color: #fff;
+	color: red;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -97,6 +97,7 @@ label {
     letter-spacing: 0.2em;
     padding: 1.5em;
     display: none;
+    cursor: pointer;
 }
 nav a {
     color: #fff;
@@ -140,6 +141,7 @@ nav a:hover span{
     border: none;
     outline: none;
     background-color: inherit;
+    cursor: pointer;
 }
 
 .fullmenu, .workmenu {
@@ -168,29 +170,8 @@ nav a:hover span{
 .dropdown:hover .workmenu {
     display: block;
 }
+
 /*start of black nav styling*/
-
-.black-nav .other-links {
-    color: #222;
-}
-
-.black-dropbtn {
-    color: #222;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.75em;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.2em;
-    margin-right: 1em;
-    padding: 1.5em;
-    display: inline-block;
-    margin: 0;
-    border: none;
-    outline: none;
-    background-color: inherit;
-}
 
 /*start of section styling*/
 section{
@@ -328,13 +309,13 @@ section a:hover span{
    margin-bottom: -80px;
    background: #222;
    background: rgba(0, 0, 0, 0.8);
-   color: grey;
+   color: #bfbfbf;
    padding: 15px;
    text-align: center;
    /*my type stying*/
    font-family: proxima-nova, sans-serif;
    font-style: normal;
-   font-weight: 400;
+   font-weight: 100;
    font-size: 0.8em;
    text-transform: uppercase;
    text-decoration: none;
@@ -346,6 +327,7 @@ section a:hover span{
 }
 .story {
    color: #fff;
+   font-weight: 400;
 }
 
 body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
@@ -436,6 +418,7 @@ footer a:hover span{
 	label{
 		display: block;
 	}
+}
 
 @media only screen and (max-width: 800px) {
 
@@ -458,48 +441,6 @@ footer a:hover span{
 	p {
 	color: #222;
 	text-align: center;
-	}
-	#beauty {
-	background: url("../images/beauty-2.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	z-index: 6;
-	}
-	#fashion {
-	background: url("../images/fashion-2.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	z-index: 5;
-	}
-	#kids {
-	background: url("../images/kids-2.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	z-index: 4;
-	}
-	#interiors {
-	background: url("../images/interiors-2.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	z-index: 3;
-	}
-	#food {
-	background: url("../images/food-2.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	z-index: 2;
-	}
-	#seasonal {
-	background: url("../images/seasonal-2.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	z-index: 1;
 	}
 }
 
