@@ -26,7 +26,7 @@ header{
 	position: relative;
 	width: 100%;
 	z-index: 7;
-	background-color: violet;
+/*	background-color: violet;*/
 }
 
 .logo, .black-logo {
@@ -442,7 +442,23 @@ footer a:hover span{
 	body{
 		font-size: 15px;
 	}
-
+	 .logo {
+	float: none;
+	margin-left: 0;
+	padding-bottom: 3em;
+	}
+	h1 {
+	color: #222;
+	text-align: center;
+	}
+	h1 > a{
+	color: #222;
+	text-align: center;
+	}	
+	p {
+	color: #222;
+	text-align: center;
+	}
 	#beauty {
 	background: url("../images/beauty-2.jpg");
 	background-size: cover;
@@ -487,27 +503,6 @@ footer a:hover span{
 	}
 }
 
-@media only screen and (max-width: 700px) {
-
-
- .logo {
-	float: none;
-	margin-left: 0;
-	padding-bottom: 3em;
-	}
-	h1 {
-	color: #222;
-	text-align: center;
-	}
-	h1 > a{
-	color: #222;
-	text-align: center;
-	}	
-	p {
-	color: #222;
-	text-align: center;
-	}
-}
 
 @media only screen and (max-width : 650px) and (min-width : 481px) {
    /* Tablet view: 2 tiles */
@@ -575,8 +570,6 @@ footer a:hover span{
    	margin: 0;
    }
 }
-
-
 
 @media only screen and (max-width: 320px) {
 	#beauty {
