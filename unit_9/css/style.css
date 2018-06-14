@@ -96,8 +96,12 @@ label {
     text-decoration: none;
     letter-spacing: 0.2em;
     padding: 1.5em;
-    display: none;
+    display: inline-block;
     cursor: pointer;
+    background-color: lightgreen;
+}
+.mobile{
+	display: none;
 }
 nav a {
     color: #fff;
@@ -110,6 +114,7 @@ nav a {
     letter-spacing: 0.2em;
     padding: 1.5em;
     display: inline-block;
+    background-color: peachpuff;
 }
 
 nav a span {
@@ -121,8 +126,9 @@ nav a:hover span{
 }
 
 .dropdown {
-    float: left;
+/*    float: left;*/
     overflow: hidden;
+    display: inline;
 }
 
 .dropdown .dropbtn {
@@ -167,7 +173,7 @@ nav a:hover span{
     line-height: 2.5;
 }
 
-.dropdown:hover .workmenu {
+label:hover ~ .dropdown > .workmenu, #toggle:checked + .dropdown, #toggle:checked + .dropdown .workmenu {
     display: block;
 }
 
