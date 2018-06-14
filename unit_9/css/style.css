@@ -94,7 +94,7 @@ label {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.2em;
-    padding: 1.5em;
+    padding: 1em;
     display: inline-block;
     cursor: pointer;
 /*    background-color: lightgreen;*/
@@ -108,7 +108,7 @@ nav a {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.2em;
-    padding: 1.5em;
+    padding: 1em;
     display: inline-block;
 }
 nav a span {
@@ -409,6 +409,10 @@ body{
 	.other-links{
 	display: block;
 	background-color: rgba(21,19,24,.9);
+	padding-bottom: 0.7em;
+	}
+	#email{
+	padding-bottom: 2em;
 	}
 }
 
