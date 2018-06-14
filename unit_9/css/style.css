@@ -87,7 +87,7 @@ nav {
 }
 
 label {
-	color: white;
+	color: #fff;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -99,7 +99,7 @@ label {
     display: none;
 }
 nav a {
-    color: white;
+    color: #fff;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -169,12 +169,27 @@ nav a:hover span{
     display: block;
 }
 /*start of black nav styling*/
-.black-nav > a{
-	color: #222;
+
+.black-nav .other-links {
+    color: #222;
 }
 
-.black-nav {
-	color: #222;
+.black-dropbtn {
+    color: #222;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    margin-right: 1em;
+    padding: 1.5em;
+    display: inline-block;
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: inherit;
 }
 
 /*start of section styling*/
@@ -422,7 +437,7 @@ footer a:hover span{
 		display: block;
 	}
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
 
 	body{
 		font-size: 15px;
@@ -469,6 +484,28 @@ footer a:hover span{
 	background-position: center;
 	background-repeat: no-repeat;
 	z-index: 1;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+
+
+ .logo {
+	float: none;
+	margin-left: 0;
+	padding-bottom: 3em;
+	}
+	h1 {
+	color: #222;
+	text-align: center;
+	}
+	h1 > a{
+	color: #222;
+	text-align: center;
+	}	
+	p {
+	color: #222;
+	text-align: center;
 	}
 }
 
@@ -540,27 +577,7 @@ footer a:hover span{
 }
 
 
-@media only screen and (max-width: 400px) {
 
-
- .logo {
-	float: none;
-	margin-left: 0;
-	padding-bottom: 3em;
-	}
-	h1 {
-	color: #222;
-	text-align: center;
-	}
-	h1 > a{
-	color: #222;
-	text-align: center;
-	}	
-	p {
-	color: #222;
-	text-align: center;
-	}
-}
 @media only screen and (max-width: 320px) {
 	#beauty {
 	background: url("../images/beauty-3.jpg");
