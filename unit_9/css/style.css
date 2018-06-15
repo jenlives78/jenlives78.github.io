@@ -529,11 +529,15 @@ body{
 @media only screen and (max-width: 700px) {
 /*	centering of logo & nav*/
 
-	 .logo {
+	.black-logo, .logo {
 	float: none;
-	margin-left: 0;
+	margin: 0 auto;
+	display: block;
 	padding-bottom: 0.5em;
 	margin-top: 1em;
+	}
+	.black-logo{
+	margin-bottom: 2em;
 	}
 	h1 {
 	color: #222;
@@ -587,6 +591,10 @@ body{
    .box {
       width: 50%;
       padding-bottom: 50%;
+   }
+   .beauty-wrapper{
+   	margin-right: 1.5em;
+   	margin-left: 1.5em;
    }
 }
 
