@@ -12,6 +12,16 @@ body{
 	font-family: futura-pt, proxima-nova, sans-serif;
 }
 
+hr{
+	width: 95%;
+	margin-left: 3em;
+	margin-right: 3em;
+	height: 100px;
+	background-color: #ccc;
+	border: 0 none;
+	height: 1px;
+}
+
 .clearfix:after{
 	visibility: hidden;
 	height: 0;
@@ -26,13 +36,14 @@ header{
 	position: relative;
 	width: 100%;
 	z-index: 7;
-	background-color: violet;
+/*	background-color: violet;*/
 }
 
 .logo, .black-logo {
 	float: left;
 	margin-left: 3em;
 	margin-top: 2em;
+/*	background-color: peachpuff;*/
 }
 
 .black-logo {
@@ -159,7 +170,7 @@ section{
 	padding: 2em;
 }
 
-.work {
+.view {
 	font-family: proxima-nova, sans-serif;
 	font-style: normal;
 	font-weight: 100;
@@ -245,9 +256,9 @@ section a:hover span{
 /*end of section styling*/
 
 /*start of beauty gallery styling*/
-.wrapper{
-   	margin-left: 2em;
-   	margin-right: 2em;
+.beauty-wrapper{
+   	margin-left: 3em;
+   	margin-right: 3em;
     overflow: hidden;
 }
 
@@ -315,13 +326,115 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 	opacity: 0.5;
 }
 
+/*start of beauty in a flash styling*/
+.project{
+	margin-top:1em;
+	margin-left: 3em;
+	display: inline-block;
+	border-top: 1px solid #ccc;
+/*	background-color: orange;*/
+}
+.project-title{
+	margin-top: 1em;
+	color: #222;
+	font-family: futura-pt, sans-serif;
+	font-weight: 700;
+	font-size: 1.25em;
+	letter-spacing: 0.15em;
+}
+.project-info{
+	margin-top: 0.6em;
+	padding-bottom: 2em;
+	color: #222;
+	font-family: proxima-nova, sans-serif;
+	font-weight: 100;
+	font-size: 0.65em;
+	letter-spacing: 0.25em;
+	border-bottom: 1px solid #ccc;
+}
+.bold{
+	font-weight: 600;
+}
+.bs-wrapper{
+	margin-top: 3em;
+	margin-left: 3em;
+	margin-bottom: 1em;
+	margin-right: 3em;
+	/*background-color: azure;*/
+	overflow: hidden;
+}
+#flash > img{
+	float: left;
+	width: 12.2%;
+	margin: 0.15%;
+}
+#tbs > img{
+	float: left;
+	width: 12.2%;
+	margin: 0.15%;
+}
+#school > img{
+	float: left;
+	width: 16.3681%;
+	margin: 0.15%;
+}
+.back {
+	margin-left: 4em;
+	margin-bottom: 4em;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 0.75em;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 0.2em;
+	color: #bfbfbf;
+	background-color: rgb(21,19,24);
+	display: block;
+	padding: 10px;
+	width: 170px;
+}
+.back-link a span {
+	padding-bottom: 8px: 
+}
+
+.back-link a:hover span{
+	border-bottom: 0.5px solid;	
+}
+
+.other-projects{
+	margin-top: 2em;
+	margin-left: 3em;
+}
+.other-projects a > img{
+	width: 9%;
+	margin: 0.05%;
+	margin-bottom: 1em;
+}
+.more img:hover {
+	opacity: 0.5;
+}
+.more{
+	margin-top: 0.6em;
+	padding-bottom: 2em;
+	color: #222;
+	font-family: proxima-nova, sans-serif;
+	font-weight: 600;
+	font-size: 0.65em;
+	letter-spacing: 0.25em;
+}
+
 /*start of footer styling*/
 footer {
+	margin-left: 3em;
+	margin-bottom: 1em;
 	height: 3em;
 	width: 100%;
 	background-color: #fff;
 	position: relative;
 	z-index: 10;
+/*	background-color: turquoise;*/
 }
 
 footer a span {
@@ -333,15 +446,14 @@ footer a:hover span{
 }
 
 #copyright {
-	color: grey;
+	color: #222;
 	font-family: proxima-nova, sans-serif;
 	font-style: normal;
 	font-weight: 100;
-	font-size: .65em;
+	font-size: .6em;
 	text-transform: uppercase;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.2em;
 	display: inline-block;
-	margin-left: 3em;
 	transform: translateY(100%);	
 }
 
@@ -365,7 +477,8 @@ footer a:hover span{
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	right: 2em;
+	right: 7.5em;
+/*	background-color: violet;*/
 }
 /*end of footer styling*/
 
