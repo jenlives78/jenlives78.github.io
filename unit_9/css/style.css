@@ -583,6 +583,12 @@ footer a:hover span{
  }
 
 @media only screen and (max-width: 1118px) {
+	.container{
+		min-width: 250px;
+	}
+	.row{
+		min-width: 300px;
+	}
 	.project-info {
 		text-align: center;
 		width: 100%;
