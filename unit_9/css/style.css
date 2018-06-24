@@ -12,16 +12,6 @@ body{
 	font-family: futura-pt, proxima-nova, sans-serif;
 }
 
-hr{
-	width: 95%;
-	margin-left: 3em;
-	margin-right: 3em;
-	height: 100px;
-	background-color: #ccc;
-	border: 0 none;
-	height: 1px;
-}
-
 .clearfix:after{
 	visibility: hidden;
 	height: 0;
@@ -47,7 +37,7 @@ header{
 }
 
 .black-logo {
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 }
 
 .black-logo > h1 a{
@@ -84,7 +74,12 @@ p {
 }
 
 /*start of nav styling*/
-#toggle{
+.plus{
+	font-family: futura-pt, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+	#toggle{
     display: none;
 }
 .mobile{
@@ -108,6 +103,13 @@ label {
     padding: 1em;
     display: inline-block;
     cursor: pointer;
+/*    background-color: aquamarine;*/
+}
+.black-nav label {
+	color: #222;
+}
+.black-nav > .navlinks .other-links {
+	color: #222;
 }
 nav a {
     color: #fff;
@@ -129,6 +131,8 @@ nav a span {
 }
 nav a:hover span{
     border-bottom: 1px solid;   
+}
+.other-links{
 }
  
 .navlinks{
@@ -155,6 +159,7 @@ nav a:hover span{
     display: block;
     text-align: left;
     text-transform: uppercase;
+    z-index: 1000;
 }
 
 
@@ -251,10 +256,11 @@ section a:hover span{
 }
 /*end of section styling*/
 
-/*start of beauty gallery styling*/
+/*start of  gallery styling*/
 .beauty-wrapper{
    	margin-left: 3em;
    	margin-right: 3em;
+   	padding-top: 1em;
     overflow: hidden;
 }
 
@@ -322,61 +328,132 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 	opacity: 0.5;
 }
 
-/*start of beauty in a flash styling*/
-.project{
-	margin-top:1em;
+/*start of project page styling*/
+/*start of gallery styling*/
+.container {
+	padding-top: 2em;
+	width: 25%;
+	margin: 0 auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+/*controler*/
+.controls{
+  text-align: center;
+  padding-bottom: 0.5em;
+  margin: 0 auto;
+/*  background-color: turquoise;*/
+}
+.prev{
+	color: #222;
+	font-family: proxima-nova, sans-serif;
+	font-weight: 600;
+	font-size: 0.65em;
+	letter-spacing: 0.25em;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: default;
+}
+.next{
+	color: #222;
+	font-family: proxima-nova, sans-serif;
+	font-weight: 600;
+	font-size: 0.65em;
+	letter-spacing: 0.25em;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: default;
+}
+.row{
+	padding-bottom: 1.5em;
+	width: 40%;
+	margin: 0 auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* 8 columns side by side */
+.column {
+  float: left;
+  width: 12.5%;
+}
+.column12 {
+  float: left;
+  width: 8.3333%;
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+hr{
+	width: 95%;
 	margin-left: 3em;
-	display: inline-block;
-	border-top: 1px solid #ccc;
-/*	background-color: orange;*/
+	margin-right: 3em;
+	height: 100px;
+	background-color: #ccc;
+	border: 0 none;
+	height: 1px;
+}
+/*start of bottom section styling*/
+#left{
+	margin-left: 1em;
+}
+.bottomSection{
+	width: 32.7%;
+	float: left;
 }
 .project-title{
-	margin-top: 1em;
 	color: #222;
 	font-family: futura-pt, sans-serif;
 	font-weight: 700;
-	font-size: 1.25em;
+	font-size: .85em;
 	letter-spacing: 0.15em;
 }
-.project-info{
-	margin-top: 0.6em;
-	padding-bottom: 2em;
+.team-info{
+	margin-top: 0.8em;
+	padding-bottom: 2.2em;
 	color: #222;
 	font-family: proxima-nova, sans-serif;
 	font-weight: 100;
-	font-size: 0.65em;
+	font-size: .65em;
 	letter-spacing: 0.25em;
-	border-bottom: 1px solid #ccc;
 }
 .bold{
 	font-weight: 600;
 }
-.bs-wrapper{
-	margin-top: 3em;
-	margin-left: 3em;
-	margin-bottom: 1em;
-	margin-right: 3em;
-	/*background-color: azure;*/
-	overflow: hidden;
+.more{
+	color: #222;
+	font-family: proxima-nova, sans-serif;
+	font-weight: 600;
+	font-size: .65em;
+	letter-spacing: 0.25em;
+	text-align: center;
+/*	background-color: violet;*/
 }
-#flash > img{
-	float: left;
-	width: 12.2%;
-	margin: 0.15%;
+.bottomSection img{
+	margin-top: 0.8em;
+	width: 22%;
+	opacity: 0.5;
+	min-width: 80px;
+	max-width: 107px;
 }
-#tbs > img{
-	float: left;
-	width: 12.2%;
-	margin: 0.15%;
+.bottomSection img:hover {
+	opacity: 1;
 }
-#school > img{
-	float: left;
-	width: 16.3681%;
-	margin: 0.15%;
-}
+
 .back {
-	margin-left: 4em;
-	margin-bottom: 4em;
 	font-family: proxima-nova, sans-serif;
 	font-style: normal;
 	font-weight: 100;
@@ -398,28 +475,10 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 .back-link a:hover span{
 	border-bottom: 0.5px solid;	
 }
+.thumbnails{
+	text-align: center;
+}
 
-.other-projects{
-	margin-top: 2em;
-	margin-left: 3em;
-}
-.other-projects a > img{
-	width: 9%;
-	margin: 0.05%;
-	margin-bottom: 1em;
-}
-.more img:hover {
-	opacity: 0.5;
-}
-.more{
-	margin-top: 0.6em;
-	padding-bottom: 2em;
-	color: #222;
-	font-family: proxima-nova, sans-serif;
-	font-weight: 600;
-	font-size: 0.65em;
-	letter-spacing: 0.25em;
-}
 
 /*start of footer styling*/
 footer {
@@ -502,14 +561,17 @@ footer a:hover span{
  	background-color: rgba(21,19,24,.9);
  	}
  	#email{
- 		padding-bottom: 2em;
+ 	padding-bottom: 2em;
  	}
  	.mobile{
- 		display: block;
+ 	display: block;
  	}
  	.wide{
- 		display: none;
+ 	display: none;
  	}
+	.black-nav > .navlinks .other-links {
+	color: #fff;
+}
 }
 
 @media only screen and (max-width : 1050px) {
@@ -519,6 +581,25 @@ footer a:hover span{
       padding-bottom: 33.3%;
    }
  }
+
+@media only screen and (max-width: 1118px) {
+	.project-info {
+		text-align: center;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.bottomSection{
+		margin: 0 auto;
+		width: 100%;
+/*		background-color: violet;*/
+	}
+	.back{
+		display: none;
+	}
+	#left{
+		margin: auto 0;
+	}
+}
 @media only screen and (max-width: 1000px) {
 
 body{
@@ -535,9 +616,6 @@ body{
 	display: block;
 	padding-bottom: 0.5em;
 	margin-top: 1em;
-	}
-	.black-logo{
-	margin-bottom: 2em;
 	}
 	h1 {
 	color: #222;
@@ -582,6 +660,9 @@ body{
 	}
 	#email{
 	padding-bottom: 3em;
+	}
+	.black-nav > .navlinks .other-links {
+	color: #222;
 	}
 }
 

@@ -18,43 +18,141 @@
 		    <div class="black-logo">
 		    	<h1><a href="index.html">Jen Ives</a></h1>
 		    	<p>Design & Art Direction</p>
-        </div>
-        
+            </div>
+            <nav class="black-nav">
+                <label for="toggle"><span class="wide"><span class="plus">+</span>Work</span><span class="mobile"><span class="plus">+</span>Menu</span></label>
+                <input type="checkbox" id="toggle">
+                <div class="navlinks">
+                    <div class="workmenu">
+                        <a href="beauty.html"><span>Beauty</span></a>
+                        <a href="Fashion"><span>Fashion</span></a>
+                        <a href="Kidswear"><span>Kidswear</span></a>
+                        <a href="Food"><span>Food</span></a>
+                        <a href="Interiors"><span>Interiors</span></a>
+                        <a href="Seasonal"><span>Seasonal</span></a>
+                    </div>
+                    <a href="About" class="other-links"><span>About</span></a>
+                    <a href="mailto:jenlives78@gmail.com?subject=Website Enquiry" class="other-links" id="email"><span>Email</span></a>
+                </div>
+            </nav>
 	</header>
 
-            <div class="project">
-                <h1 class="project-title">The Body Shop</h1>
-                <p class="project-info"><span class="bold">Product launches and charity campaigns</span><br>
-                    <span class="bold">Photography</span> Emma Tempest, Laurent Darmon, Rankin,<br> Benjamin Kaufmann, David Slijper, David Parfitt, Erez Sabag</p>
-                    
+            <div class="container">
+      		    <div class="mySlides">
+                    <img src="images/b33.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/b34.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/b35.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/b36.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/b37.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/b38.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/b39.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/b40.jpg" style="width:100%">
+                </div>
             </div>
 
-            <div class="bs-wrapper clearfix" id="tbs">
-      		        <img src="images/b33.jpg">
-                    <img src="images/b34.jpg">
-                    <img src="images/b35.jpg">
-                    <img src="images/b36.jpg">
-                    <img src="images/b37.jpg">
-                    <img src="images/b38.jpg">
-                    <img src="images/b39.jpg">
-                    <img src="images/b40.jpg">
-            </div>
-            <div class="back-link">
-                    <a href="beauty.html" class="back">BACK / <span class="section-link">BEAUTY</span></a>
-            </div>
+
+                <div class="controls">
+                <a class="prev" onclick="plusSlides(-1)">Previous</a>
+                <a class="next" onclick="plusSlides(1)">/ Next</a>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="images/b33.jpg" style="width:100%" onclick="currentSlide(1)" alt="White Musk Libertine">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/b34.jpg" style="width:100%" onclick="currentSlide(2)" alt="White Musk Libertine">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/b35.jpg" style="width:100%" onclick="currentSlide(3)" alt="Body Butter">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/b36.jpg" style="width:100%" onclick="currentSlide(4)" alt="Annie Lennox Aids Awareness Campaign">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/b37.jpg" style="width:100%" onclick="currentSlide(5)" alt="Spa Wisdom">
+                    </div>    
+                    <div class="column">
+                        <img class="demo cursor" src="images/b38.jpg" style="width:100%" onclick="currentSlide(6)" alt="Extra Virgin Minerals">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/b39.jpg" style="width:100%" onclick="currentSlide(7)" alt="Extra Virgin Minerals">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/b40.jpg" style="width:100%" onclick="currentSlide(8)" alt="Honey Bronze">
+                    </div>
+            </div> <!-- closing wrapper div -->
+            
             <hr>
-            <div class="other-projects clearfix">
-                    <p class="more">More beauty projects…</p>
-                    <a href="beauty-1.html" class="more"><img src="images/b1.jpg"></a>
-                    <a href="beauty-3.html" class="more"><img src="images/b10.jpg"></a>
-            </div>
 
-	
+            <section class="project-info clearfix">
+                <div class="bottomSection" id="left">
+                    <h1 class="project-title">The Body Shop</h1>
+                    <p class="team-info"><span class="bold">Product Launches & Charity Campaigns</span><br>
+                    <span class="bold">Photography</span> Emma Tempest, Laurent Darmon,<br> Rankin, 
+                    Benjamin Kaufmann, David Slijper,<br> David Parfitt, Erez Sabag<br>
+                    </p>
+                    <a href="beauty.html" class="back">BACK / <span class="section-link">BEAUTY</span></a>
+                </div>
+                <div class="bottomSection">
+                    <p class="more">More beauty projects</p>
+                        <div class="thumbnails">
+                            <a href="beauty-1.html" class="more"><img src="images/b1.jpg"></a>
+                            <a href="beauty-3.html" class="more"><img src="images/b10.jpg"></a>
+                        </div>
+                </div>
+            </section>
 <footer>
 	<div>
 		<P id="copyright"><span id="year">&copy;2018</span> Design Jenny Ives </P>
 		<a href="#top" id="top-link"><span>Top</span></a>
 	</div>
 </footer>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
 </body>
 </html>
