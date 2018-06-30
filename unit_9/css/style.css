@@ -743,6 +743,13 @@ footer a:hover span{
 	}
 }
 
+@media only screen and (max-width : 1050px) {
+   /* Small desktop / ipad view: 3 tiles */
+   .box {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+   }
+ }
 
 @media only screen and (max-width: 1118px) {
 	.container{
@@ -946,7 +953,7 @@ body{
 	}
 }
 
-@media only screen and (max-width: 650px) and (min-width : 481px) {
+@media only screen and (max-width: 650px) and (min-width : 421px) {
    /* Tablet view: 2 tiles */
    .box {
       width: 50%;
@@ -958,7 +965,7 @@ body{
    }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 420px) {
    /* Smartphone view: 1 tile */
    .box {
       width: 100%;
