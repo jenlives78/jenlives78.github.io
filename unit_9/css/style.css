@@ -599,7 +599,7 @@ footer a:hover span{
 /*start of media queries*/
 
 @media only screen and (min-width:1921px) {
-	#beauty {
+#beauty {
 	background: url("../images/beauty-hero.jpg");
 	background-size: cover;
 	background-position: center;
@@ -649,7 +649,7 @@ footer a:hover span{
 }
 
 @media only screen and (max-width:1920px) and (min-width:1001px) {
-	#beauty {
+#beauty {
 	background: url("../images/beauty-hero.jpg");
 	background-size: cover;
 	background-position: center;
@@ -720,9 +720,11 @@ footer a:hover span{
  	}
  	.workmenu{
     position:initial;
- 	}
+	}
  	.navlinks{
  	position: absolute;
+ 	left: 0;
+ 	top: 2em;
  	}
  	.other-links {
  	background-color: rgba(21,19,24,.9);
