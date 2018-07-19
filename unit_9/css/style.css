@@ -171,13 +171,15 @@ nav a:hover span{
     text-transform: uppercase;
     z-index: 1000;
 }
-
+john.humbracht@generalassemb.ly
+@ga.com
 
 /*start of section styling*/
 .homepage section{
 	position: relative;
 	z-index: 0;
 	height: 95vh;
+	min-height: 35em;
 	padding: 2em;
 }
 
@@ -953,9 +955,10 @@ body{
 	}
 }
 
-@media only screen and (max-width: 650px) and (min-width : 421px) {
+@media only screen and (max-width: 650px) {
    /* Tablet view: 2 tiles */
-   .box {
+
+   	   .box {
       width: 50%;
       padding-bottom: 50%;
    }
