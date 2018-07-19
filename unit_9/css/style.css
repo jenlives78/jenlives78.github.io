@@ -171,8 +171,8 @@ nav a:hover span{
     text-transform: uppercase;
     z-index: 1000;
 }
-john.humbracht@generalassemb.ly
-@ga.com
+/*john.humbracht@generalassemb.ly
+@ga.com*/
 
 /*start of section styling*/
 .homepage section{
@@ -958,7 +958,7 @@ body{
 @media only screen and (max-width: 650px) {
    /* Tablet view: 2 tiles */
 
-   	   .box {
+   	.box {
       width: 50%;
       padding-bottom: 50%;
    }
@@ -999,7 +999,7 @@ body{
 	#beauty {
 	background: url("../images/beauty-4.jpg");
 	background-size: cover;
-	/*background-position: center;*/
+	background-position: center;
 	background-repeat: no-repeat;
 	z-index: 6;
 	}
