@@ -337,6 +337,10 @@ overflow-x:scroll;
 height: 70vh;
 }
 
+.projectContainerSml {
+	display: none;
+}
+
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.4;
@@ -788,7 +792,7 @@ justify-content: center;
 	}
 	.projectContainer{
 		width: 85vw;
-		height: 50vh;
+		height: 60vh;
 		margin: 0 auto;
 	}
 	.projectContainer img{
@@ -1047,6 +1051,22 @@ body{
 	background-repeat: no-repeat;
 	z-index: 1;
 	}
+
+	.projectContainerSml {
+	width: 96vw;
+	margin-left: 2em;
+	margin-right: 2em;
+	display: flex;
+	overflow-x:scroll;
+	}
+	.projectContainer img {
+	height: 70vh;
+	}
+
+	.projectContainer {
+		display: none;
+	}
+
 }
 
 
