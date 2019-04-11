@@ -1003,12 +1003,11 @@ body{
    }
 }
 
-
-/*@media only screen and (max-width: 480px) {
-	.more img {
-		width: 20%;
-	}
-}*/
+@media only screen and (max-width: 405px){
+.thumbnails img{
+	width: 60px;
+ 	}
+}
 
 @media only screen and (max-width:320px) {
 	#beauty {
@@ -1053,7 +1052,6 @@ body{
 	background-repeat: no-repeat;
 	z-index: 1;
 	}
-
 	.projectContainerSml {
 	width: 96vw;
 	margin-left: 2em;
@@ -1064,11 +1062,9 @@ body{
 	.projectContainer img {
 	height: 70vh;
 	}
-
 	.projectContainer {
 		display: none;
 	}
-
 }
 
 
