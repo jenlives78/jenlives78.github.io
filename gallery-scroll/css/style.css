@@ -7,18 +7,19 @@ body{
 	background-color: red;
 	height: 80vh;
 	width: 100vw;
-	display: flex;
-	align-items: center;
+	white-space: nowrap;
+	overflow-y: hidden;
 	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
 .slides{
 	background-color: lightgreen;
 	height: 80%;
-	width: 80%;
+	display: inline;
+
 }
 
 .slides img {
-height: 500px;
-width: 350px;
+height: 100%;
 }
