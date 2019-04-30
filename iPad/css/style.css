@@ -21,14 +21,19 @@ body{
 
 
 
-
 .projectContainerSml{
 	height: 50vh;
 	margin: 0 2em 0 2em;
-	display: flex;
-	overflow-x:scroll;
+	white-space: nowrap;
+	overflow-y: hidden;
+	overflow-x: scroll;
 	-webkit-overflow-scrolling: touch;
+}
+
+.slides {
+	display: inline;
 	}
-.projectContainerSml img{
+
+.slides img{
 	height: 100%;
 	}
