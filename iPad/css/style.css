@@ -21,7 +21,27 @@ body{
 
 
 
-.projectContainerSml{
+/*start of project page styling*/
+.largeProject{
+	margin: 0 2em 0 2em;
+	display: flex;
+	overflow-x:scroll;
+	-webkit-overflow-scrolling: touch;
+}
+.largeProject img{
+	height: 70vh;
+}
+.smallProject{
+	display: none;
+}
+
+@media only screen and (max-width: 1118px) {
+
+.largeProject{
+	display: none;
+}
+.smallProject{
+	display: block;
 	height: 50vh;
 	margin: 0 2em 0 2em;
 	white-space: nowrap;
@@ -29,11 +49,10 @@ body{
 	overflow-x: scroll;
 	-webkit-overflow-scrolling: touch;
 }
-
-.slides {
+.slides{
 	display: inline;
 	}
-
 .slides img{
 	height: 100%;
 	}
+}
