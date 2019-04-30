@@ -1,0 +1,58 @@
+
+@import url("https://use.typekit.net/aun6ona.css");
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-size:16px;
+	font-family: futura-pt, proxima-nova, sans-serif;
+}
+.clearfix:after{
+	visibility: hidden;
+	height: 0;
+	font-size: 0;
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+
+
+/*start of project page styling*/
+.largeProject{
+	margin: 0 2em 0 2em;
+	display: flex;
+	overflow-x:scroll;
+	-webkit-overflow-scrolling: touch;
+}
+.largeProject img{
+	height: 70vh;
+}
+.smallProject{
+	display: none;
+}
+
+@media only screen and (max-width: 1118px) {
+
+.largeProject{
+	display: none;
+}
+.smallProject{
+	display: block;
+	height: 50vh;
+	margin: 0 2em 0 2em;
+	white-space: nowrap;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+.slides{
+	display: inline;
+	}
+.slides img{
+	height: 100%;
+	}
+}
