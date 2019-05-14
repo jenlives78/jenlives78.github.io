@@ -1,1 +1,62 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-size:16px;
+	font-family: futura-pt, proxima-nova, sans-serif;
+}
+.clearfix:after{
+	visibility: hidden;
+	height: 0;
+	font-size: 0;
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+
+/*standard projects*/
+.standardProjectSml{
+	display: none;
+	}
+.standardProject{
+	margin: 0 2em 0 2em;
+	justify-content: center;
+	display: flex;
+	overflow-x:scroll;
+	-webkit-overflow-scrolling: touch;
+	}
+.standardProject img{
+	height: 70vh;
+	}
+
+
+
+/*small projects*/
+@media only screen and (max-width: 1118px) {
+
+.standardProject{
+	display: none;
+	}
+.standardProjectSml {
+	margin: 0 2em 0 2em;
+	display: flex;
+	justify-content: center;
+	white-space: nowrap;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+	}
+.standardProjectSml img{
+	height: 55vh;
+	}
+.slides{
+	display: inline;
+	}
+}
+
+
+
 
