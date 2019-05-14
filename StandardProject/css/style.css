@@ -39,21 +39,21 @@ body{
 
 .standardProject{
 	display: none;
-	}
-.standardProjectSml {
+	}	
+.standardProjectSml{
+	display: block;
+	height: 60vh;
 	margin: 0 2em 0 2em;
-	display: flex;
-	justify-content: center;
 	white-space: nowrap;
 	overflow-y: hidden;
 	overflow-x: scroll;
 	-webkit-overflow-scrolling: touch;
 	}
-.standardProjectSml img{
-	height: 55vh;
-	}
 .slides{
 	display: inline;
+	}
+.slides img{
+	height: 100%;
 	}
 }
 
